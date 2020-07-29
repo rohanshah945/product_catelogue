@@ -1,0 +1,72 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.left__block {
+  vertical-align: top;
+}
+
+.right__block {
+  vertical-align: bottom;
+}
+
+.row__products {
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.centered {
+  text-align: center;
+}
+
+.row__product {
+  padding: 10px;
+  min-width: 33%;
+  max-height: 300px;
+}
+
+.row__product__link {
+  text-decoration: none;
+  color: black;
+}
+
+.row__product__link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  transition: transform 450ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 156, 0.05);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.imageContainer {
+  width: 400px;
+  height: 400px;
+}
+
+.imageArea {
+  width: 250px;
+  height: 250px;
+  vertical-align: middle;
+}
+
+.descPanel {
+  max-width: 55%;
+  vertical-align: top;
+}
+@media only screen and (max-width: 1200px) {
+  .row__products {
+    flex-direction: column;
+  }
+}
