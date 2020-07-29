@@ -3,11 +3,13 @@ import Product from "./Product";
 import axios from "../api/Axios";
 import "./Products.css";
 
+// This code is responsible for displaying all the products in a List View
 function Products() {
-  const [items, setItems] = useState([]);
-  const [categories, setCategories] = useState([]);
-  const [category, setCategory] = useState("All");
+  const [items, setItems] = useState([]); //Stores All the Items
+  const [categories, setCategories] = useState([]); //Stores All the Categories
+  const [category, setCategory] = useState("All"); //Stores Selected Categry
 
+  // Fetching Categories
   useEffect(() => {
     const fetchCategoriesData = async () => {
       const requestCategories = await axios.get("/categories");
@@ -18,6 +20,7 @@ function Products() {
     fetchCategoriesData();
   }, []);
 
+  // Fetching Items' Data
   useEffect(() => {
     const fetchItemsData = async () => {
       const requestItems = await axios.get("/products");
@@ -32,6 +35,7 @@ function Products() {
     fetchItemsData();
   }, [category]);
 
+  // Converting Categories into Options
   const categorySelection = () => {
     return categories.map((category) => (
       <option key={category?.id} value={category?.id}>
@@ -44,6 +48,7 @@ function Products() {
     <div className="p-3">
       <h1 className="ml-1">Products</h1>
       <hr />
+      {/* Category Selection */}
       <div className="form-group centered">
         <label htmlFor="categoryDropdown">Select Category</label>
         <select
@@ -62,6 +67,7 @@ function Products() {
 
       <hr />
 
+      {/* Product List */}
       <div className="row__products">
         {Object.values(items).map((item) => (
           <Product

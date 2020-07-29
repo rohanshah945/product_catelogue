@@ -16,6 +16,7 @@ function Home() {
         </h4>
         <hr />
 
+        {/* Details and Instructions */}
         <div className="jumbotron">
           <h4>Steps to Install the Project</h4>
           <ul>
@@ -31,6 +32,8 @@ function Home() {
             <li>Bootstrap</li>
           </ul>
         </div>
+
+        {/* Skip to the Main Application */}
         <Link to="/products">
           <button className="btn btn-primary btn-lg">
             SKIP TO THE PRODUCTS PAGE

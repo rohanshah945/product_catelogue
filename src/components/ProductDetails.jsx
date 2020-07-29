@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "../api/Axios";
 
+// This Code is Responsible for displaying Product Details on a Separate Page.
 function ProductDetails({ match }) {
-  const [item, setItem] = useState({});
+  const [item, setItem] = useState({}); // item is a object that stores the data of the item
 
+  // Whenever the Product will be change it'll fetch the latest data and stores into state
   useEffect(() => {
     const fetchData = async () => {
       const requestItemData = await axios.get(`/products/${match.params.id}`);
@@ -22,9 +24,13 @@ function ProductDetails({ match }) {
       <h1 className="ml-1"> Product Details</h1>
 
       <hr />
+
+      {/* Back Button */}
       <Link to="/products" className="backNavigation">
         <button className="btn btn-primary mb-3">{`<`}</button>
       </Link>
+
+      {/* Main Container */}
       <div className="container">
         <div className="d-inline-block pull-left ml-2 imageContainer">
           {item.categoryId ? (

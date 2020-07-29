@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
 
+// This code is responsible for displaying individal Product in the product List
 function Product({ id, name, model, price, categoryId }) {
   return (
     <div className="row__product">
@@ -9,6 +10,7 @@ function Product({ id, name, model, price, categoryId }) {
         <div className="card">
           <div className="card-body">
             <div className="d-inline-block left__block pull-left ml-2">
+              {/* If categoryId == 0 that means Category is Laptop. it will load image from thirdparty website */}
               {categoryId ? (
                 <img
                   alt={name}
@@ -21,6 +23,8 @@ function Product({ id, name, model, price, categoryId }) {
                 />
               )}
             </div>
+
+            {/* Details of the Product */}
             <div className="d-inline-block right__block pull-left ml-4">
               <b>
                 <h5 className="card-title">{name}</h5>
