@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/product_catelogue_demo/static/css/main.9237605b.chunk.css",
+    "main.js": "/product_catelogue_demo/static/js/main.7b8d7afb.chunk.js",
+    "main.js.map": "/product_catelogue_demo/static/js/main.7b8d7afb.chunk.js.map",
+    "runtime-main.js": "/product_catelogue_demo/static/js/runtime-main.3196f575.js",
+    "runtime-main.js.map": "/product_catelogue_demo/static/js/runtime-main.3196f575.js.map",
+    "static/js/2.79bb1c6e.chunk.js": "/product_catelogue_demo/static/js/2.79bb1c6e.chunk.js",
+    "static/js/2.79bb1c6e.chunk.js.map": "/product_catelogue_demo/static/js/2.79bb1c6e.chunk.js.map",
+    "index.html": "/product_catelogue_demo/index.html",
+    "precache-manifest.fadc541e134309914812198b7ef6c988.js": "/product_catelogue_demo/precache-manifest.fadc541e134309914812198b7ef6c988.js",
+    "service-worker.js": "/product_catelogue_demo/service-worker.js",
+    "static/css/main.9237605b.chunk.css.map": "/product_catelogue_demo/static/css/main.9237605b.chunk.css.map",
+    "static/js/2.79bb1c6e.chunk.js.LICENSE.txt": "/product_catelogue_demo/static/js/2.79bb1c6e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3196f575.js",
+    "static/js/2.79bb1c6e.chunk.js",
+    "static/css/main.9237605b.chunk.css",
+    "static/js/main.7b8d7afb.chunk.js"
+  ]
+}
